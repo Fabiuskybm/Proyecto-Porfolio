@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1><span class="destacado">FB</span>enítez</h1>
+        </div>
+
+        <button id="abrir" class="abrir-menu"><img src="./images/icon-menu.png" alt="icon-menu"></button>
+        
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><img src="./images/icon-X.png" alt="x-icon"></button>
+            <ul id="nav-list" class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobremi.html">Sobre mi</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="main-heading">
+
+            <div class="heading-img">
+                <img src="./images/coding-gif.gif" alt="coding-gif">
+            </div>
+
+
+
+            <div class="main-heading-content">
+                <h2><span>F</span>abio <span>B</span>enítez</h2>
+
+                <h3 class="title">1ºCFGS - Desarrollo de Aplicaciones Multiplataformas</h3>
+
+                <div class="location">
+                    <a href="https://www3.gobiernodecanarias.org/medusa/edublog/iesanaluisabenitez/" target="_blank" title="Visitar sitio web del centro">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#008fa8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="11" r="3" />
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                        </svg>
+                    </a>
+                    <p>IES Ana Luisa Benítez - Las Palmas de Gran Canaria</p>
+    
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="services-container">
+
+            <h2>Mis Servicios</h2>
+
+            <div class="services">
+                <div class="web-design">
+                    <h3 class="services-titles">Diseño y desarrollo Web</h3>
+    
+                    <img src="./images/icons-diseño-web.png" alt="icons-diseño-web">
+    
+                    <p class="services-text">En diseño y desarrollo web, nuestra profesionalidad se traduce en sitios elegantes y funcionales que potenciarán la imagen de tu marca.</p>
+                </div>
+    
+                <div class="app-design">
+                    <h3 class="services-titles">Aplicaciones móviles</h3>
+    
+                    <img src="./images/icons-app-design.png" alt="icons-diseño-web">
+    
+                    <p class="services-text">En el diseño de aplicaciones móviles, fusionamos la creatividad con la eficacia para desarrollar soluciones que destaquen y fortalezcan la presencia digital de tu empresa.</p>
+                </div>
+            </div>
+
+            <a href="contacto.html" class="budget-button">Pedir presupuesto</a>
+
+
+        </div>
+
+    
+
+        <div class="form-container">
+
+            <div class="form">
+                
+                <h2>Contacto</h2>
+
+                <form id="form" action="">
+                    <div class="form-name contact">
+                        <label class="form-labels" for="">Nombre</label>
+                        <input class="form-inputs" type="text" name="Nombre" id="name-input" placeholder="Nombre">
+
+                        <p class="error-message name-error">El nombre no es correcto. Debe tener al menos 4 caracteres.</p>
+                    </div>
+    
+                    <div class="form-email contact">
+                        <label class="form-labels" for="">Email</label>
+                        <input class="form-inputs" type="email" name="Email" id="email-input" placeholder="correo@correo.com">
+
+                        <p class="error-message email-error">Email icorrecto.</p>
+                    </div>
+    
+                    <div class="form-tel contact">
+                        <label class="form-labels" for="">Teléfono</label>
+                        <input class="form-inputs" type="tel" name="Telefono" id="tel-input" placeholder="666999777">
+
+                        <p class="error-message tel-error">Teléfono incorrecto.</p>
+                    </div>
+    
+                    <div class="form-affair contact">
+                        <label class="form-labels" for="">Asunto</label>
+                        <input class="form-inputs" type="text" name="Asunto" id="annount-input" placeholder="Proyecto">
+
+                        <p class="error-message annount-error">Asunto incorrecto.</p>
+                    </div>
+    
+                    <div class="form-message contact block">
+                        <label class="form-labels" for="">Mensaje</label>
+                        <textarea class="form-textarea" name="Mensaje" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <div class="block">
+                        <button type="submit" class="form-button">Enviar</button>
+                    </div>
+
+                    <div class="error-form-message" id="error-form-message">
+                        <img src="./images/icon-error.png" alt="">
+                        <p>Error. Debes completar correctamente todos los campos.</p>
+                    </div>
+
+                    <div class="send-form-message" id="send-form-message">
+                        <img src="./images/icons-check.png" alt="">
+                        <p>Mensaje enviado correctamente</p>
+                    </div>
+    
+                </form>
+                    
+            </div>
+
+
+            <div class="contact-info">
+                <h4 class="info">Más información</h4>
+                
+                <div class="location-info">
+
+                    <div class="direction form-icons">
+                        <a href="https://www3.gobiernodecanarias.org/medusa/edublog/iesanaluisabenitez/" target="_blank" title="Visitar sitio web del centro">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="12" cy="11" r="3" />
+                                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                            </svg>
+                        </a>
+                        <p>IES Ana Luisa Benítez - LPGC</p>
+                    </div>
+
+                    <div class="telefono form-icons">
+                        <img src="./images/icons-teléfono.png" alt="telefono">
+                        <p>(+34) 666999777</p>
+                    </div>
+
+                    <div class="correo form-icons">
+                        <img src="./images/icons-correo.png" alt="correo">
+                        <p>fabio.benitezmolina@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <p class="info eslogan">¡espero tu mensaje!</p>
+                <p class="web-info">www.fbenitezweb.com</p>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="social">
+
+            <h3 class="footer-text">Sígueme en mis redes!</h3>
+
+            <div class="social-icons">
+                <div class="linkedin social-icons">
+                    <a href="#" title="Linkedin">
+                        <img src="./images/icon-linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+    
+                <div class="github social-icons">
+                    <a href="https://github.com/Fabiuskybm" title = "Github" target="_blank">
+                        <img src="./images/icons-github.png" alt="github">
+                    </a>
+                </div>
+    
+            </div>
+
+        </div>
+
+
+        <div class="terminos">
+            <a href="#">
+                <p class="footer-text">Términos y Condiciones</p>
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p class="footer-text">&copy; 2024 Fabio Benítez - 1ºDAM. Proyecto de Porfolio.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+
+    
+</body>
+
+</html>
