@@ -19,8 +19,7 @@ cerrar.addEventListener("click", () => {
 
 
 // SLIDER
-const requestURL =
-  "../projects.json";
+const requestURL = "../projects.json";
 
 const request = new XMLHttpRequest();
 request.open("GET", requestURL);
@@ -49,14 +48,14 @@ function agregarProyecto(jsonObj) {
     nextButton.id = 'next';
     nextButton.classList.add('next');
     nextButton.classList.add('slider-buttons');
-    nextImg.src = '.././images/icon-next.png';
+    nextImg.src = '../images/icon-next.png';
     nextImg.alt = 'icon-next';
     nextButton.appendChild(nextImg);
 
     prevButton.id = 'prev';
     prevButton.classList.add('back');
     prevButton.classList.add('slider-buttons');
-    prevImg.src = '.././images/icon-back.png';
+    prevImg.src = '../images/icon-back.png';
     prevImg.alt = 'icon-back';
     prevButton.appendChild(prevImg);
 
