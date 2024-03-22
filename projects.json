@@ -1,0 +1,56 @@
+[
+    {
+        "image": "./images/proyecto-freelancer.png",
+        "title": "Proyecto Freelancer",
+        "description": "Proyecto HTML y CSS realizado en la 1ªEvaluación desde cero.",
+        "url": "https://fabiuskybm.github.io/Freelancer/",
+        "urlIcon": "./images/icons-url.png",
+        "github": "./images/icons-github2.png",
+        "projectGithub": "https://github.com/Fabiuskybm/Freelancer.git"
+    },
+    {
+        "image": "./images/creacion-web.png",
+        "title": "Proyecto Creación Web Personal - Pepe LLuyot",
+        "description": "Práctica guiada para la creación de una página web personal o Portfolio.",
+        "url": "https://fabiuskybm.github.io/Proyecto-creacion-web-personal-Pepe-Lluyot/",
+        "urlIcon": "./images/icons-url.png",
+        "github": "./images/icons-github2.png",
+        "projectGithub": "https://github.com/Fabiuskybm/Proyecto-creacion-web-personal-Pepe-Lluyot.git"
+    },
+    {
+        "image": "./images/proyecto-frontend-store.png",
+        "title": "Frontend Store",
+        "description": "Proyecto de tienda de camisetas realizado en clase.",
+        "url": "https://fabiuskybm.github.io/Proyecto-Frontend-Store/",
+        "urlIcon": "./images/icons-url.png",
+        "github": "./images/icons-github2.png",
+        "projectGithub": "https://github.com/Fabiuskybm/Proyecto-Frontend-Store.git"
+    },
+    {
+        "image": "./images/single-price-grid-project.jpg",
+        "title": "Single Price Grid",
+        "description": "Proyecto de Frontend Mentor aplicando CSS Grid.",
+        "url": "https://fabiuskybm.github.io/Single-price-grid/",
+        "urlIcon": "./images/icons-url.png",
+        "github": "./images/icons-github2.png",
+        "projectGithub": "https://github.com/Fabiuskybm/Single-price-grid.git"
+    },
+    {
+        "image": "./images/product-preview-card.jpg",
+        "title": "Product Preview Card",
+        "description": "Proyecto de Frontend Mentor aplicando Flexbox.",
+        "url": "https://fabiuskybm.github.io/Product-preview-card/",
+        "urlIcon": "./images/icons-url.png",
+        "github": "./images/icons-github2.png",
+        "projectGithub": "https://github.com/Fabiuskybm/Product-preview-card.git"
+    },
+    {
+        "image": "./images/huddle-landing-page.jpg",
+        "title": "Huddle Landing Page",
+        "description": "Proyecto de Frontend Mentor.",
+        "url": "https://fabiuskybm.github.io/Huddle-landing-page/",
+        "urlIcon": "./images/icons-url.png",
+        "github": "./images/icons-github2.png",
+        "projectGithub": "https://github.com/Fabiuskybm/Huddle-landing-page.git"
+    }
+]

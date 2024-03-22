@@ -614,7 +614,7 @@ footer p {
     align-items: center;
     text-align: center;
     background-color: transparent;
-    height: fit-content;
+    height: auto;
     border-radius: 50%;
     border: none;
     cursor: pointer;
