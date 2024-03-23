@@ -19,7 +19,7 @@ cerrar.addEventListener("click", () => {
 
 
 // SLIDER
-const requestURL = "../projects.json";
+const requestURL = "projects.json";
 
 const request = new XMLHttpRequest();
 request.open("GET", requestURL);
@@ -46,21 +46,16 @@ function agregarProyecto(jsonObj) {
     const nextImg = document.createElement('img');
 
     nextButton.id = 'next';
-    nextButton.classList.add('next');
-    nextButton.classList.add('slider-buttons');
+    nextButton.classList.add('next', 'slider-buttons');
     nextImg.src = '../images/icon-next.png';
     nextImg.alt = 'icon-next';
     nextButton.appendChild(nextImg);
 
     prevButton.id = 'prev';
-    prevButton.classList.add('back');
-    prevButton.classList.add('slider-buttons');
+    prevButton.classList.add('back', 'slider-buttons');
     prevImg.src = '../images/icon-back.png';
     prevImg.alt = 'icon-back';
     prevButton.appendChild(prevImg);
-
-
-
     
     projectSubContainer.appendChild(prevButton);
 
@@ -91,19 +86,23 @@ function agregarProyecto(jsonObj) {
         
         const projectImg = item.appendChild(div2);
         projectImg.classList.add('project-img');
+
         const image = projectImg.appendChild(img);
         image.src = jsonObj[i].image;
     
     
         const information = item.appendChild(div3);
         information.classList.add('project-information');
+
         const h3 = document.createElement('h3');
         h3.classList.add('project-title');
+
         const projectTitle = information.appendChild(h3);
         projectTitle.textContent = jsonObj[i].title;
 
         const p = document.createElement('p');
         p.classList.add('project-description');
+
         const projectDescription = information.appendChild(p);
         projectDescription.textContent = jsonObj[i].description;
 
@@ -167,16 +166,13 @@ function iniciarSlider() {
     let lengthItems = items.length - 1;
     let active = 0;
 
-    console.log("Items: ", items);
     next.onclick = function(){
         active = active + 1 <= lengthItems ? active + 1 : 0;
-        console.log("Next - Active:", active);
         reloadSlider();
     }
 
     prev.onclick = function(){
         active = active - 1 >= 0 ? active - 1 : lengthItems;
-        console.log("Prev - Active:", active);
         reloadSlider();
     }
 
