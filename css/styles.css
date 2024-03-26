@@ -872,7 +872,8 @@ footer p {
 
     /* SECCIÓN PROYECTOS */
     .projects-container {
-        width: 80%;
+        max-width: 80%;
+        width: auto;
         height: auto;
     }
 
@@ -900,6 +901,17 @@ footer p {
     .project-description {
         font-size: 2rem;
         line-height: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .projects-slider {
+        min-width: 90rem;
+    }
+
+
+    .project-img img {
+        height: 40rem;
     }
 
 
